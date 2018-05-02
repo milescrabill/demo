@@ -24,6 +24,10 @@
 #   go-tests = true
 #   unused-packages = true
 
+# used by https://github.com/heroku/heroku-buildpack-go
+# see: https://devcenter.heroku.com/articles/go-apps-with-dep#build-configuration
+[metadata.heroku]
+  root-package = "github.com/milescrabill/demo"
 
 [prune]
   go-tests = true
