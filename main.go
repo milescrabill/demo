@@ -1,11 +1,12 @@
 package main
 
 import (
-	"net/http"
 	"io"
+	"net/http"
 )
 
 func main() {
+	// this is a comment
 	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
 		io.WriteString(w, "<h1>hello, world!</h1>\n")
 	})
